@@ -1,6 +1,6 @@
 
 ## Introduction
-This is a little filter app which enables one to drag and drop an image, which is then resized to fit into a 500x500 square and can then be applied funky filters to.
+This is a little filter app which enables one to drag and drop an image, which is then resized to fit into a 500x500 square and can then have funky filters applied to. Oooerr.
 
 <img src="public/assets/img/screenshot.png"/>
 

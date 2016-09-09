@@ -46,18 +46,29 @@ section, footer, header{
 
 
 h1{
+	font-size: 100px;
 	font: 48px/1 Helvetica, sans-serif;
 	font-weight:400;
 	letter-spacing: 0.2em;
 	color:#ffff4d;
 	text-align:center;
-	padding:1em 0 1em;
+	padding:0.4em 0.2em 0.5em;
 	margin:0 auto;
 	/*text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;*/
 }
 
 h1 b{
 	font-weight:600;
+}
+
+#title {
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	height: 75px;
+	width: 275px;
+	border: 5px solid #ffff4d;
+
 }
 
 /*----------------------------
@@ -75,7 +86,7 @@ h1 b{
 #photo:after{
 	content: 'drop a photo here';
 	text-align:center;
-	top: 10em;
+	top: 12em;
 	z-index: 1;
 	color: #000;
 	font-family: 'Inconsolata', monospace;

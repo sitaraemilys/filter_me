@@ -17,7 +17,6 @@ Then open your browser, visit `http://localhost:8080`.
 
 ## Tools used
 * JQuery
-* fileReader plugin - elaborate
-* JQuery MouseWheel
-* Canvas - lok up
-* Caman plugin - elaborate
+* FileReader.js: This is a lightweight wrapper around the HTML5 drag/drop events that makes them much easier to work with. It also adds a method to jQuery, so you can bind the events to a specific element.
+* JQuery MouseWheel: Plugin to scroll the filter container.
+* Caman.js: This is a canvas manipulation library that allows you to apply various effects and filters on an image.

@@ -1,0 +1,192 @@
+/* ==================================================
+Global Imports
+================================================== */
+/*----------------------------
+	Variables
+-----------------------------*/
+/*-------------------------
+	Simple reset
+--------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*-------------------------
+	General Styles
+--------------------------*/
+html {
+  background: url("../img/fish.jpg") no-repeat #fff;
+  background-size: cover; }
+
+body {
+  font: 14px/1.3 "Inconsolata", monospace;
+  position: relative;
+  min-height: 500px; }
+
+a {
+  outline: none;
+  color: #264347; }
+  a:hover {
+    text-decoration: none; }
+
+section, footer, header {
+  display: block; }
+
+h1 b {
+  font-weight: 600; }
+
+/*----------------------------
+	Heading
+-----------------------------*/
+h1 {
+  font-size: 100px;
+  font: 48px/1 Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #ffff4d;
+  text-align: center;
+  padding: 0.4em 0.2em 0.5em;
+  margin: 0 auto; }
+
+#title {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  height: 75px;
+  width: 275px;
+  border: 5px solid #ffff4d; }
+
+/*----------------------------
+	The Photo
+-----------------------------*/
+#photo {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  position: relative; }
+  #photo:after {
+    content: 'drop a photo here';
+    text-align: center;
+    top: 12em;
+    z-index: 1;
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 1px; }
+  #photo canvas {
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%; }
+  #photo img {
+    opacity: 0; }
+
+/*----------------------------
+	The Filters
+-----------------------------*/
+#filterContainer {
+  width: 1000px;
+  margin: 50px auto 90px;
+  position: relative;
+  display: none; }
+
+#filters {
+  padding: 20px 20px 30px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  list-style: none;
+  white-space: nowrap;
+  overflow-x: scroll; }
+  #filters li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    /* The filters */ }
+    #filters li:last-child {
+      margin-right: 0; }
+    #filters li#normal {
+      background-image: url("../img/filters/normal.jpg"); }
+    #filters li#vintage {
+      background-image: url("../img/filters/vintage.jpg"); }
+    #filters li#lomo {
+      background-image: url("../img/filters/lomo.jpg"); }
+    #filters li#clarity {
+      background-image: url("../img/filters/clarity.jpg"); }
+    #filters li#sinCity {
+      background-image: url("../img/filters/sinCity.jpg"); }
+    #filters li#sunrise {
+      background-image: url("../img/filters/sunrise.jpg"); }
+    #filters li#crossProcess {
+      background-image: url("../img/filters/crossProcess.jpg"); }
+    #filters li#orangePeel {
+      background-image: url("../img/filters/orangePeel.jpg"); }
+    #filters li#love {
+      background-image: url("../img/filters/love.jpg"); }
+    #filters li#grungy {
+      background-image: url("../img/filters/grungy.jpg"); }
+    #filters li#jarques {
+      background-image: url("../img/filters/jarques.jpg"); }
+    #filters li#pinhole {
+      background-image: url("../img/filters/pinhole.jpg"); }
+    #filters li#oldBoot {
+      background-image: url("../img/filters/oldBoot.jpg"); }
+    #filters li#glowingSun {
+      background-image: url("../img/filters/glowingSun.jpg"); }
+    #filters li#hazyDays {
+      background-image: url("../img/filters/hazyDays.jpg"); }
+    #filters li#herMajesty {
+      background-image: url("../img/filters/herMajesty.jpg"); }
+    #filters li#nostalgia {
+      background-image: url("../img/filters/nostalgia.jpg"); }
+    #filters li#hemingway {
+      background-image: url("../img/filters/hemingway.jpg"); }
+    #filters li#concentrate {
+      background-image: url("../img/filters/concentrate.jpg"); }
+    #filters li a {
+      display: block;
+      width: 150px;
+      height: 130px;
+      display: inline-block;
+      position: relative;
+      background: center top no-repeat;
+      text-decoration: none !important;
+      background-size: cover;
+      font-weight: bold;
+      color: #264347;
+      line-height: 294px;
+      text-align: center;
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+      border-radius: 4px;
+      font-size: 12px; }
+      #filters li a.active {
+        cursor: default; }
+        #filters li a.active:before {
+          content: '';
+          position: absolute;
+          width: 49px;
+          height: 45px;
+          top: 43px;
+          left: 51px;
+          background: url("../img/fish.svg") no-repeat; }
+
+/* Custom scrollbars for webkit */
+#filterContainer ::-webkit-scrollbar {
+  height: 10px;
+  background-color: #264347;
+  box-shadow: 1px #000;
+  border-radius: 4px; }
+
+/* Handle */
+#filterContainer ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #ffff4d;
+  box-shadow: inset 0.5px 0.5px 0.5px 0.5px #fff; }
+
+/*# sourceMappingURL=application.css.map */

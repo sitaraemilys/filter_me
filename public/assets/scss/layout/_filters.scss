@@ -1,0 +1,158 @@
+/*----------------------------
+	The Filters
+-----------------------------*/
+
+#filterContainer{
+	width: 1000px;
+	margin: 50px auto 90px;
+	position: relative;
+	display:none;
+}
+
+
+#filters{
+	padding: 20px 20px 30px;
+	border-radius: 8px;
+	background-color: rgba($color-primary, 0.5) ;
+	overflow: hidden;
+	list-style: none;
+	white-space: nowrap;
+	overflow-x: scroll;
+
+  & li {
+    display:inline-block;
+  	margin:0 15px 0 0;
+
+    &:last-child {
+  	margin-right:0;
+    }
+
+    /* The filters */
+    &#normal{
+      background-image:url('../img/filters/normal.jpg');
+    }
+
+    &#vintage{
+      background-image:url('../img/filters/vintage.jpg');
+    }
+
+    &#lomo{
+      background-image:url('../img/filters/lomo.jpg');
+    }
+
+    &#clarity{
+      background-image:url('../img/filters/clarity.jpg');
+    }
+
+    &#sinCity{
+      background-image:url('../img/filters/sinCity.jpg');
+    }
+
+    &#sunrise{
+      background-image:url('../img/filters/sunrise.jpg');
+    }
+
+    &#crossProcess{
+      background-image:url('../img/filters/crossProcess.jpg');
+    }
+
+    &#orangePeel{
+      background-image:url('../img/filters/orangePeel.jpg');
+    }
+
+    &#love{
+      background-image:url('../img/filters/love.jpg');
+    }
+
+    &#grungy{
+      background-image:url('../img/filters/grungy.jpg');
+    }
+
+    &#jarques{
+      background-image:url('../img/filters/jarques.jpg');
+    }
+
+    &#pinhole{
+      background-image:url('../img/filters/pinhole.jpg');
+    }
+
+    &#oldBoot{
+      background-image:url('../img/filters/oldBoot.jpg');
+    }
+
+    &#glowingSun{
+      background-image:url('../img/filters/glowingSun.jpg');
+    }
+
+    &#hazyDays{
+      background-image:url('../img/filters/hazyDays.jpg');
+    }
+
+    &#herMajesty{
+      background-image:url('../img/filters/herMajesty.jpg');
+    }
+
+    &#nostalgia{
+      background-image:url('../img/filters/nostalgia.jpg');
+    }
+
+    &#hemingway{
+      background-image:url('../img/filters/hemingway.jpg');
+    }
+
+    &#concentrate{
+      background-image:url('../img/filters/concentrate.jpg');
+    }
+
+    & a {
+  	display: block;
+  	width: 150px;
+  	height: 130px;
+  	display: inline-block;
+  	position: relative;
+  	background: center top no-repeat;
+  	text-decoration: none !important;
+  	background-size: cover;
+
+
+  	font-weight: bold;
+  	color: $color-secondary;
+  	line-height: 294px;
+  	text-align: center;
+  	box-shadow: 0 0 1px rgba($color-primary, 0.4) inset;
+  	border-radius: 4px;
+  	font-size: 12px;
+
+      &.active {
+        cursor:default;
+
+        &:before{
+          content: '';
+          position: absolute;
+          width: 49px;
+          height: 45px;
+          top: 43px;
+          left: 51px;
+          background: url('../img/fish.svg') no-repeat;
+        }
+      }
+    }
+  }
+}
+
+/* Custom scrollbars for webkit */
+
+#filterContainer ::-webkit-scrollbar {
+  height: 10px;
+	background-color: $color-secondary;
+	box-shadow: 1px $black;
+	border-radius: 4px;
+
+}
+
+/* Handle */
+#filterContainer ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: $color-text-header;
+		box-shadow: inset 0.5px 0.5px 0.5px 0.5px $color-primary;
+}

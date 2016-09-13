@@ -1,0 +1,24 @@
+/*----------------------------
+	Heading
+-----------------------------*/
+
+h1{
+	font-size: 100px;
+	font: 48px/1 Helvetica, sans-serif;
+	font-weight:400;
+	letter-spacing: 0.2em;
+	color:$color-text-header;
+	text-align:center;
+	padding:0.4em 0.2em 0.5em;
+	margin:0 auto;
+}
+
+#title {
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	height: 75px;
+	width: 275px;
+	border: 5px solid $color-text-header;
+
+}

@@ -1,0 +1,39 @@
+/*----------------------------
+	The Photo
+-----------------------------*/
+
+#photo{
+	margin:0 auto;
+	width:500px;
+	height:500px;
+	text-align:center;
+	position:relative;
+
+  &:after{
+  	content: 'drop a photo here';
+  	text-align:center;
+  	top: 12em;
+  	z-index: 1;
+  	color: $black;
+  	font-family: 'Inconsolata', monospace;
+  	display: block;
+  	font-size: 20px;
+  	position: relative;
+  	letter-spacing: 1px;
+  }
+
+  & canvas {
+    text-align:center;
+    display:inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position:absolute;
+    z-index:5;
+    top:50%;
+    left: 50%;
+  }
+
+  & img {
+    opacity: 0;
+  }
+}
